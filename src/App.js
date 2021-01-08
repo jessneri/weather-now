@@ -25,11 +25,10 @@ class App extends Component {
           `http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=VS6d3fGNOAKH2OeE0Grp2zi5kBTgIymP&q=
           ${this.state.coords.latitude}%2C${this.state.coords.longitude}`
         ).then(data => {
-          const resp = data.data.Key
-          console.log(resp)
-          return resp
-        }).then(resp => {
-          Axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${resp}?apikey=VS6d3fGNOAKH2OeE0Grp2zi5kBTgIymP`
+          const res = data.data.Key
+          return res
+        }).then(res => {
+          Axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${res}?apikey=VS6d3fGNOAKH2OeE0Grp2zi5kBTgIymP`
           ).then(res => {
             console.log(res)
           })
