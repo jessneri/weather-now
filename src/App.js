@@ -41,7 +41,6 @@ class App extends Component {
               wind: res.data.current.wind_kph
 
             }
-            console.log(res)
           this.setState({data: weatherData})
 
         })
