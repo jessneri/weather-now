@@ -25,7 +25,7 @@ class App extends Component {
 
         //api
         Axios.get(
-          `http://api.weatherapi.com/v1/current.json?key=7cc511b452fa472fa9f190226210801&q=${this.state.coords.latitude},${this.state.coords.longitude}`
+          `https://api.weatherapi.com/v1/current.json?key=7cc511b452fa472fa9f190226210801&q=${this.state.coords.latitude},${this.state.coords.longitude}`
           ).then(res => {
           
             let weatherData = {
