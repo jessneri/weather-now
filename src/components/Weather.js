@@ -5,7 +5,6 @@ import "./Weather.css";
 export default function Weather(props) {
   const {
     name,
-    region,
     country,
     description,
     icon,
@@ -22,8 +21,9 @@ export default function Weather(props) {
       <div className="title">
         <img src={icon} alt="icon" />
         <div>
+          <h3>{date}</h3>
           <span>
-            {name}, {region}, {country}
+            {name}, {country}
           </span>
           <h1>{temperature}º C</h1>
           <h2>{description}</h2>

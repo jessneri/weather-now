@@ -30,7 +30,6 @@ class App extends Component {
           
             let weatherData = {
               name: res.data.location.name,
-              region: res.data.location.region,
               country: res.data.location.country,
               description: res.data.current.condition.text,
               icon: res.data.current.condition.icon,
@@ -46,7 +45,7 @@ class App extends Component {
         })
 
         const today = new Date(),
-        showDate = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
+        showDate = (today.getMonth() + 1) + ' / ' + today.getDate() + ' / ' + today.getFullYear();
         this.setState({date: showDate})
 
       });

@@ -25,6 +25,13 @@ img{
     margin-right:30px;
 }
 
+.title h3{
+    margin: 0;
+    margin-bottom:5px;
+    font-size:16px;
+    color: rgba(0,40,70,0.6);
+}
+
 .title span{
     font-size:16px;
 }
@@ -49,6 +56,11 @@ img{
 .each-info{
     display: flex;
     flex-direction: column;
+}
+
+.each-info span {
+    color: rgba(0,40,70,0.6);
+
 }
 
 .each-info h2{
