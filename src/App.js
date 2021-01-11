@@ -10,7 +10,6 @@ class App extends Component {
       longitude: 0,
     },
     data: {},
-    date: 0,
   };
 
   //will run whenever refresh the browser
@@ -43,10 +42,6 @@ class App extends Component {
           this.setState({data: weatherData})
 
         })
-
-        const today = new Date(),
-        showDate = (today.getMonth() + 1) + ' / ' + today.getDate() + ' / ' + today.getFullYear();
-        this.setState({date: showDate})
 
       });
     }else{

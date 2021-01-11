@@ -21,7 +21,6 @@ export default function Weather(props) {
       <div className="title">
         <img src={icon} alt="icon" />
         <div>
-          <h3>{date}</h3>
           <span>
             {name}, {country}
           </span>
