@@ -10,7 +10,7 @@ class App extends Component {
       longitude: 0,
     },
     data: {},
-    date: {},
+    date: 0,
   };
 
   //will run whenever refresh the browser
