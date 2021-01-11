@@ -14,13 +14,16 @@ export default function Weather(props) {
     humidity,
     wind,
   } = props.weatherData.data;
-  const { date } = props.weatherData;
+
+  const date = new Date(),
+  showDate = (date.getMonth() + 1) + ' / ' + date.getDate() + ' / ' + date.getFullYear();
 
   return (
     <main>
       <div className="title">
         <img src={icon} alt="icon" />
         <div>
+          <h3>{showDate}</h3>
           <span>
             {name}, {country}
           </span>
